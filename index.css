@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.thumb-items li {
+  margin-bottom: 10px;
+}

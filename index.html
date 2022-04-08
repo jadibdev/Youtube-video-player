@@ -1,12 +1,243 @@
-<!--
-  Objective:
 
-    Create a Youtube video player clone
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <title>YouTube</title>
+</head>
+<body>
+  <!-- navbar -->
+    <div class="navbar">
+      <!-- left -->
+        <div class="navbar-left">
+          <div style="margin-left: 15px"><i class="material-icons">menu</i></div>
+          <div style="display: flex; align-items: center; margin-left: 10px">
+            <i class="fab fa-youtube fa-2x" style="color: red;"></i>
+            <P>YouTube</P>
+          </div>
+        </div>
+      <!-- middle -->
+        <div style="display: flex; align-items: center">
+          <div><input type="text" placeholder="Search" style="width: 400px; height: 27px"></div>
+          <div style="padding: 8px; background-color: lightgray;"><i class="fas fa-search" style="font-size: 0.9rem;"></i></div>
+        </div>
+      <!-- right -->
+        <div style="display: flex; padding-right: 25px; align-items: center;">
+          <div style="padding-right: 25px;"><i class="fas fa-th"></i></div>
+          <div style="padding-right: 25px;"><i class="fas fa-bell"></i></div>
+          <div>
+            <img
+              style="width: 30px; height: 30px; border-radius: 100%; margin-top: 2px" 
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQGqQnBCln51zg/profile-displayphoto-shrink_200_200/0/1596702257499?e=1654732800&v=beta&t=DB54Ds8HmfaKfVel604aS1z1BbIb6EAVLtgfmmnh4yE"
+              alt="Profile Pic">
+          </div>
+        </div>
+    </div>
+  
+  <!-- main section -->
+  <div class="main" style="display: flex">
+    <!-- left section -->
+    <div class="left-section" style="margin-left: 20px; margin-top: 20px;">
+      <div>
+        <iframe width="690" height="400" src="https://www.youtube.com/embed/r44RKWyfcFw" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div>
+        <h2>Welcome To Silicon Valley</h2>
+        <div style="display: flex; align-items: center">
+          <div style="display: flex; align-items: center">
+            <p>2,943,696 views . Jun 5, 2015</p>
+          </div>
+          <div style="display: flex; align-items: center; margin-left: 150px">
+            <i class="fas fa-thumbs-up like-size"></i>
+            <p style="margin-left: 5px">39K</p>
+          </div>
+          <div style="display: flex; align-items: center; margin-left: 20px">
+            <i class="fas fa-thumbs-down like-size"></i>
+            <p style="margin-left: 5px">31</p>
+          </div>
+          <div style="display: flex; align-items: center; margin-left: 20px">
+            <i class="fas fa-share like-size"></i>
+            <p style="margin-left: 5px">SHARE</p>
+          </div>
+          <div style="display: flex; align-items: center; margin-left: 20px">
+            <i class="fas fa-list like-size"></i>
+            <p style="margin-left: 5px">SAVE</p>
+          </div>
+          <div style="display: flex; align-items: center; margin-left: 20px">
+            <i class="fas fa-ellipsis-h like-size"></i>
+          </div>
+        </div>
+        <hr />
+      </div>
 
-  Sections:
+      <!-- description section -->
+      <div class="right-section" style="margin-top: 10px;">
+        <div>
+          <div style="display: flex; align-items: center">
+            <div style="display: flex; align-items: center">
+              <div>
+                <img src="https://yt3.ggpht.com/ytc/AKedOLSH0HDjX1B-HH7Mozl4n7x-om5ZG6kMvYXrmwCK=s48-c-k-c0x00ffffff-no-rj"
+                  alt="Ympact pic">
+              </div>
+              <div style="margin-left: 10px">
+                <h5>Ympact - Global Startups, Entrepreneurs, and Changemakers</h5>
+                <p>43.9K subscribers</p>
+                
+              </div>
+            </div>
+            <div style="margin-left: 140px; background-color: red; color: white; height: 40px; 
+                  padding-bottom: 10px; padding-right: 10px; padding-left: 10px; border-radius: 5%;">
+              <p>SUBSCRIBE</p>
+            </div>
+          </div>
+          <div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
 
-    Navbar
-    Sidebar - video thumbnails
-    Middle section - main video
-    Bottom section - title, description, etc ...
--->
+    <!-- right section -->
+
+    <!-- Thumbnail Section -->
+    <section>
+      <div>
+        <ul class="thumb-items" style="list-style: none">
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=5WiDIhIkPoM" target="_blank">
+                <img alt="Mark Zuckerberg" style="width: 169px; height: 110px" src="http://i3.ytimg.com/vi/5WiDIhIkPoM/hqdefault.jpg"/>
+              </a>
+              <div style="margin-left: 10px">
+                <p style="font-weight: bold">Mark Zuckerberg: Building the Facebook Empire</p>
+                <p>
+                  Bloomberg Quicktake: Originals<br>
+                  3.9M views . 8 years ago
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=rtgN27z0oi0" target="_blank">
+                <img alt="Satya Nadella" style="width: 169px; height: 110px" src="http://i3.ytimg.com/vi/rtgN27z0oi0/hqdefault.jpg" />
+              </a>
+              <div style="margin-left: 10px">
+                <p>Satya Nadella, CEO of Microsoft</p>
+                <p>
+                  Stanford Graduate School of Business <br>
+                  1M views . 2 years ago
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=3Fx5Q8xGU8k&t=1s" target="_blank">
+                <img alt="Peter thiel" width="168"
+                  src="http://i3.ytimg.com/vi/3Fx5Q8xGU8k/hqdefault.jpg">
+              </a>
+              <div style="margin-left: 10px">
+                <p>Competition is for losers, Peter Thiel</p>
+                <p>
+                  Y Combinator <br>
+                  1.4M views . 5 years ago 
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=i5f8bqYYwps&t=1s" target="_blank">
+                <img alt="Steve Jobs" width="168"
+                  src="http://i3.ytimg.com/vi/i5f8bqYYwps/hqdefault.jpg">
+              </a>
+              <div style="margin-left: 10px">
+                <p>Steve Jobs in 2010, at D8 Conference (Full Video)</p>
+                <p>
+                  598,217 views . 7 years ago
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=TxgJWqfLCwE&t=861s" target="_blank">
+                <img alt="Fetch API" width="168"
+                  src="http://i3.ytimg.com/vi/TxgJWqfLCwE/hqdefault.jpg">
+              </a>
+              <div style="margin-left: 10px">
+                <p>Fetch API Tutorial With React & Material UI - React Hooks</p>
+                <p>
+                  871 views . 1 year ago
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div style="display: flex; align-items: center">
+              <a href="https://www.youtube.com/watch?v=8mceJBrgUkQ&t=1s" target="_blank">
+                <img alt="Micorverse" width="168"
+                  src="http://i3.ytimg.com/vi/8mceJBrgUkQ/hqdefault.jpg">
+              </a>
+              <div style="margin-left: 10px">
+                <p>From Microverse to Microsoft | Microverse Alum, Kevin</p>
+                <p>
+                  Microverse <br>
+                  4.1k views . 1 year ago <br>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+  </div>
+
+    <!--Comments Section-->
+    <section>
+      <div style="display: flex; margin-left: 10px; margin-top: -50px">
+        <p>1,626 Comments</p>
+        <div style="display: flex; align-items: center; margin-left: 30px;">
+          <i class="fas fa-sort-amount-down-alt fa-2x" style="font-size: 1.2rem;"></i>
+          <p style="margin-left: 10px">SORT BY</p>
+        </div>
+      </div>
+      
+      <div style="display: flex;">
+        <div>
+          <img style="margin-left: 10px; border-radius: 100%; margin-top: 10px;"
+            src="https://yt3.ggpht.com/EBMkv1fbZ5i4yY3EoEVQ4hQ3Sdn-bb4c0DkfCLxPDFiKRoZBDw00Uq_06WYpCZlc7VlDeRwAzA=s48-c-k-c0x00ffffff-no-rj"
+            alt="Profile pic">
+        </div>
+        <div style="margin-left: 20px">
+          <div style="display: flex">
+            <p style="font-weight: bold">Call Me Billy</p>
+            <p style="margin-left: 5px">1 year ago</p>
+          </div>
+          <p>"Silicon Valley is not a physical place. It is actually a state of the mind." I'll never freaking forget that</p>
+          <div style="display: flex; align-items: center">
+            <div style="display: flex; align-items: center">
+              <i class="fas fa-thumbs-up"></i>
+              <p style="margin-left: 5px">1k</p>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 20px">
+              <i class="fas fa-thumbs-down"></i>
+              <p style="margin-left: 5px">3</p>
+              <p style="margin-left: 10px">REPLY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+</body>
+</html>
